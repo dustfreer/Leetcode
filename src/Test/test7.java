@@ -1,9 +1,11 @@
 package Test;
 
 import java.util.Arrays;
-import java.util.HashSet;
+import java.util.Deque;
+import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
+import java.util.Stack;
 
 public class test7 {
 	public static boolean wordBreak(String s, List<String> wordDict) {
@@ -35,8 +37,21 @@ public class test7 {
 		return dp[s.length()+1];
 	}
 	public static void main(String[] args) {
-		String s = "leetcode";
+		String str = "leetcode";
 		List<String> wordDict = Arrays.asList("leet","code");
-		System.out.println(wordBreak(s, wordDict));
+		//System.out.println(wordBreak(str, wordDict));
+		Stack<Integer> s = new Stack<>();
+		Deque<Integer> d = new LinkedList<>();
+		d.offerFirst(1);
+		d.offerFirst(2);
+		d.push(3);
+		d.offerLast(4);
+		Iterator i = d.iterator();
+		
+		while ( i.hasNext() ) {
+			System.out.print(i.next()+"");
+		}
 	}
+	
+	
 }

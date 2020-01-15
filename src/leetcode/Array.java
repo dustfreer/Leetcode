@@ -238,7 +238,9 @@ public class Array {
     }
 	
 	public static void main(String[] args) {
-		
+		int[] nums = {2,5,1,6,7,3,9};
+		quicksort(nums);
+		System.out.println(Arrays.toString(nums));
 	}
 		
 

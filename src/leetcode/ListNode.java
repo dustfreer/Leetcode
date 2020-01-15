@@ -1,5 +1,10 @@
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class ListNode {
 	int val;
 	ListNode next;
@@ -98,7 +103,9 @@ public class ListNode {
         return back;
     }
 	
-	
+    
+    
+    
 	public static void main(String[] args) {
 	ListNode node1 = new ListNode(1);	    
 	node1.next = new ListNode(4);	    
@@ -112,6 +119,15 @@ public class ListNode {
 	//node2.next.next = new ListNode(3);	    
 	//node2.next.next.next = new ListNode(4);
 	//node2.next.next.next.next = new ListNode(1);
-	PrintList(partition(node2, 2));
+	//PrintList(partition(node2, 2));
+	
+	System.out.println(String.valueOf((char) (25 + 'A')));
+	Queue<Integer> q = new LinkedList<Integer>();
+	
+	String s = "";
+	List<String> wordList = new ArrayList<String>();
+			
+	
+	
 	}
 }
