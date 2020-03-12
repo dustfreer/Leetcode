@@ -1,5 +1,6 @@
 package BinarySearch;
 
+import java.lang.invoke.VolatileCallSite;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ public class FindPeekElementII {
 	 *2. check row find matrix[row][col] > matrix[row][col+1] and matrix[row][col] > matrix[row][col-1]
 	 *return result row and col; 
 	 */
-	
+	volatile boolean test = false;
 	public List<Integer> findPeekElement(int[][] matrix) {
 		List<Integer> result = new ArrayList<>();
 		if (matrix.length == 0 || matrix[0].length == 0) {
@@ -72,6 +73,9 @@ public class FindPeekElementII {
 						  {15,17,25,21,7},
 						  {14,18,19,20,10},
 						  {13,14,11,10,9}};
-		System.out.print(test.findPeekElement(matrix).toString());
+		//System.out.print(test.findPeekElement(matrix).toString());
+		
+		
+		System.out.print(0.1*6);
 	}
 }

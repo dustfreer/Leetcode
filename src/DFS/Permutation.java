@@ -25,7 +25,6 @@ public class Permutation {
         }
         
         for ( int i = start; i < nums.length; i++){
-        	if ( i != 0 &&)
             combination.add(nums[i]);
             permutation(i, nums, combination, result);
             combination.remove(combination.size() - 1);
